@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Mainnav from "./components/MainNav/Mainnav";
+import FirstSection from "./components/First Section/firstSection";
+import { Route, Routes } from "react-router-dom";
+import AboutUs from "./components/Pages/About/Pages/AboutUs";
+import SecondSection from "./components/Second Section/secondSection";
+import ThirdSection from "./components/Third Section/ThirdSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav>
+        <Navbar />
+        <Mainnav />
+      </nav>
+
+      <main>
+        <section className="content">
+          <FirstSection />
+        </section>
+
+        <section>
+          <SecondSection />
+        </section>
+
+        <section>
+          <ThirdSection />
+        </section>
+      </main>
+
+      <Routes>
+        <Route path="/chicken" element={<FirstSection />} />
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
+    </>
   );
 }
 

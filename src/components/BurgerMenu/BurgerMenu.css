@@ -1,0 +1,94 @@
+.NavBurger {
+    display: flex;
+    flex-direction: column;
+}
+
+.burgerContainer {
+    position: absolute;
+    height: 100vh;
+    width: 431.2px;
+    left: 0;
+    top: 0;
+    padding: 3rem 0;
+    background-color: var(--white-color);
+}
+
+.burgerContainer li {
+    margin: 1.8rem 0;
+}
+
+.burgerButton {
+    background: none;
+    border: none;
+    color: var(--red-color);
+    display: none;
+}
+
+.burgerIcons {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.burgerContainer {
+    display: none;
+}
+
+.burgerContainer ul {
+    list-style-type: none;
+}
+
+.burgerContainer ul li span {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.burgerContainer ul li {
+    font-size: 1.125rem;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+}
+
+.burgerContainer .LeftSide {
+    justify-content: center;
+    height: inherit;
+}
+
+.burgerContainer li:not(:first-child) {
+    padding: 0 3rem;
+}
+
+.burgerContainer li span:not(:first-child) {
+    color: var(--black-color);
+}
+
+.burgerContainer .LeftSideContent {
+    font-size: 1rem;
+}
+
+.burgerContainer ul .burgerIcons {
+    color: var(--red-color);
+    margin-left: 3rem;
+}
+
+@media screen and (max-width:1024px) {
+    .burgerContainer ul {
+        display: block;
+    }
+
+    .burgerButton {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* .burgerContainer {
+        display: block;
+    } */
+
+    .burgerContainer .Navbar {
+        display: block;
+    }
+
+}

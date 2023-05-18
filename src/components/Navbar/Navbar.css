@@ -1,0 +1,65 @@
+.Navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: var(--red-color);
+    padding: 1.25rem;
+    color: var(--white-color);
+}
+
+.NavbarContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 1190px;
+}
+
+.LeftSide {
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+
+.LeftSide > svg {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.RightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RightSide ul {
+    list-style: none;
+    display: flex;
+}
+
+.RightSide li {
+    margin: 0 1.3rem;
+}
+
+.RightSide li a {
+    text-decoration: none;
+    color: var(--white-color);
+    display: flex;
+}
+
+.LeftSideContent, .RightSide li a {
+    font-weight: 900;
+    font-size: 0.875rem;
+}
+
+.LeftSide {
+    cursor: pointer;
+}
+
+.LeftSide:hover, .RightSide ul li a:hover {
+    color: rgb(225, 213, 213);
+}
+
+@media screen and (max-width: 1024px) {
+    .Navbar {
+        display: none;
+    }
+}

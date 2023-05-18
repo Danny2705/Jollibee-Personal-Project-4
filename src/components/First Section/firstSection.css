@@ -1,0 +1,93 @@
+.firstSection {
+  color: var(--black-color);
+  width: 100%;
+  max-height: 80vh;
+}
+
+.firstSectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 4rem;
+  width: 97%;
+  gap: 4rem;
+}
+
+.LeftContent {
+  max-width: 503px;
+  padding: -8rem 0;
+}
+
+.LeftContent h1 {
+  font-size: 3.1em;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.LeftContent h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  word-wrap: break-word;
+  margin: 1rem 0;
+}
+
+.LeftContent p {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.RightContent img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.LeftContent .Button {
+  margin: 30px 0 0;
+}
+
+@media screen and (max-width:1024px) {
+  .LeftContent h1 {
+    font-size: 2.25rem;
+  }
+
+  .LeftContent h2, .LeftContent p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .firstSectionContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .LeftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .LeftContent {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .LeftContent h1 {
+    font-size: 1.875rem;
+  }
+
+  .firstSectionContainer {
+    padding: 0;
+    width: 100%;
+  }
+}
